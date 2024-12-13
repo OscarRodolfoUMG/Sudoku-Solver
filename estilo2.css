@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  background: linear-gradient(to right, #f00, blue);
+  background-size: 400% 400%;
+  animation: gradientBG 4s ease-in-out infinite;
+  padding: 0px;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  75% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+
+}
+
+h1 {
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px #000;
+  margin: 2px auto;
+}
+
+h2 {
+  color: blue;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+}
+
+h3 {
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+
+table {
+  background: white;
+  margin: 0 auto; /* Centrar la tabla horizontalmente */
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+th, td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  width: 20px; /* Ancho uniforme de las celdas */
+  height: 20px;
+}
+
+tr:nth-child(3n) td{
+  border-bottom: 2px solid black; 
+}
+td:nth-child(3n+1):not(:first-child) {
+  border-left: 2px solid black; 
+}
+
+a{
+  font-size: 100px; 
+}
+
+.generacion {
+    background: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 50px 60px;
+  }
